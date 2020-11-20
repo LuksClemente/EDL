@@ -44,3 +44,7 @@ func main() {
          medir(q)
          medir(c)
 }
+
+//no exemplo, vemos que é criada a interface "geometria"
+//uma coleção das funções area() e perim() que pode ser posteriormente exportada como codigo independente
+//semelhante a uma biblioteca
