@@ -42,4 +42,8 @@ func main() {
 } 
 
 
-//o codigo acima cria uma interface chamada tank, que é um conjunto dos métodos Tarea() e Volume(), ambos retornando um valor do tipo float64. O codigo escrito acima pode ser facilmente reutilizado apenas implementando a interface no decorrer do programa, e simulando uma orientação a objeto em go, já que permite que ocorra a criação de interfaces "filhas" ao criar interfaces que utilizam os metodos das interfaces "pais"
+//o codigo acima cria uma interface chamada tank, que é um conjunto dos métodos Tarea() e Volume()
+//ambos retornando um valor do tipo float64. 
+//O codigo escrito acima pode ser facilmente reutilizado apenas implementando a interface no decorrer do programa
+//simulando uma orientação a objeto em go, já que permite que ocorra a criação de interfaces "filhas" 
+//ao criar interfaces que utilizam os metodos das interfaces "pais"
