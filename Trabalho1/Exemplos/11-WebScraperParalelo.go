@@ -182,3 +182,12 @@ func main() {
 	fmt.Println("(Took ", time.Since(ini).Seconds(), "secs)")
 
 }
+
+//Esse exemplo aqui é um webscraper que obtem o titulo, nome do autor e numero de "claps" de postagens do site "medium" após receber o link delas
+//A intenção é criar uma goroutine para cada página a ser analisada. Esse programa também indica o tempo de processamento.
+//O programa está extenso, mas focaremos nas funções scrapListURL(), scrapParallel() e a main().
+//Na main() a função scrapListURL() é executada com o comando go e temos também a criação de um channel Result e um for que vai iterar esse channel
+//assim, enquanto a goroutine continuar rodando e o channel não for fechado, o for vai coletando e imprimindo os valores na tela
+//sendo assim, temos uma comunicação entre a goroutine criada e a thread principal.
+//Já na função scrapListURL(), é criado um array de channels para que eles sincronizem as goroutines novas com as atuais
+//sendo as novas originárias da função scrapParallel(). No fim de tudo, os valores iterados serão encaminhados para o channel da thread principal.
